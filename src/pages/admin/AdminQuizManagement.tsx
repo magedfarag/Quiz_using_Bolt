@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Plus, Search } from 'lucide-react';
-import AdminLayout from '../components/AdminLayout';
-import LoadingSpinner from '../components/LoadingSpinner';
+import AdminLayout from '@components/AdminLayout';
+import LoadingSpinner from '@components/LoadingSpinner';
 
 export default function AdminQuizManagement() {
   const [isLoading, setIsLoading] = useState(true);

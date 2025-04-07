@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lock, User } from 'lucide-react';
-import LoadingSpinner from '../components/LoadingSpinner';
+import LoadingSpinner from '@components/LoadingSpinner';
 
 export default function AdminLogin() {
   const [username, setUsername] = useState('');

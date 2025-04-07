@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Settings, Clock, BookOpen, CheckCircle } from 'lucide-react';
-import AdminLayout from '../components/AdminLayout';
+import AdminLayout from '@components/AdminLayout';
 
 export default function AdminSettings() {
   const [settings, setSettings] = useState({

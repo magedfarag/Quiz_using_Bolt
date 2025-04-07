@@ -1,18 +1,18 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import QuizPage from './pages/QuizPage';
-import ResultsPage from './pages/ResultsPage';
-import AdminLogin from './pages/admin/AdminLogin';
-import AdminDashboard from './pages/admin/AdminDashboard';
-import AdminQuizManagement from './pages/admin/AdminQuizManagement';
-import AdminUserManagement from './pages/admin/AdminUserManagement';
-import AdminAnalytics from './pages/admin/AdminAnalytics';
-import AdminSettings from './pages/admin/AdminSettings';
-import AdminAuditLogs from './pages/admin/AdminAuditLogs';
-import ErrorBoundary from './components/ErrorBoundary';
-import './index.css';
+import ErrorBoundary from '@components/ErrorBoundary';
+import HomePage from '@pages/HomePage';
+import QuizPage from '@pages/QuizPage';
+import ResultsPage from '@pages/ResultsPage';
+import AdminLogin from '@pages/admin/AdminLogin';
+import AdminDashboard from '@pages/admin/AdminDashboard';
+import AdminQuizManagement from '@pages/admin/AdminQuizManagement';
+import AdminUserManagement from '@pages/admin/AdminUserManagement';
+import AdminAnalytics from '@pages/admin/AdminAnalytics';
+import AdminSettings from '@pages/admin/AdminSettings';
+import AdminAuditLogs from '@pages/admin/AdminAuditLogs';
+import '@/index.css';
 
 const router = createBrowserRouter([
   {
@@ -38,23 +38,23 @@ const router = createBrowserRouter([
   {
     path: '/admin/quiz-management',
     element: <AdminQuizManagement />,
-  },  
+  },
   {
     path: '/admin/user-management',
     element: <AdminUserManagement />,
   },
   {
     path: '/admin/analytics',
-    element: <AdminAnalytics />
+    element: <AdminAnalytics />,
   },
   {
     path: '/admin/settings',
-    element: <AdminSettings />
+    element: <AdminSettings />,
   },
   {
     path: '/admin/audit-logs',
-    element: <AdminAuditLogs />
-  }
+    element: <AdminAuditLogs />,
+  },
 ]);
 
 createRoot(document.getElementById('root')!).render(

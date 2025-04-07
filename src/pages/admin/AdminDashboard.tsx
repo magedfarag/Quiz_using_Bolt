@@ -1,6 +1,6 @@
 import { Activity, Book, Users } from 'lucide-react';
-import AdminLayout from '../components/AdminLayout';
-import LoadingSpinner from '../components/LoadingSpinner';
+import AdminLayout from '@components/AdminLayout';
+import LoadingSpinner from '@components/LoadingSpinner';
 import { useState, useEffect } from 'react';
 
 export default function AdminDashboard() {

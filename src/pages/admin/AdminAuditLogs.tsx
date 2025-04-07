@@ -1,5 +1,5 @@
 import { FileText, User, Clock } from 'lucide-react';
-import AdminLayout from '../components/AdminLayout';
+import AdminLayout from '@components/AdminLayout';
 
 export default function AdminAuditLogs() {
   const logs = [
