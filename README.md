@@ -1,62 +1,118 @@
-# Quizzy - Gamified Quiz Application
+# Quizzy - Gamified Learning Platform
 
-Quizzy is a gamified quiz application designed for primary school students. It features a rich, engaging frontend and a complete REST API backend with a JSON database for proof of concept.
+## Project Overview
+Quizzy is an interactive quiz application designed for primary school students, featuring:
+- Engaging student interface with gamification elements
+- Comprehensive admin dashboard for content management
+- REST API backend with JSON database (proof of concept)
 
-## Features
+## Key Features
 
-- **Student Interface**:
-  - Take quizzes with interactive questions
-  - View results with detailed feedback
-  - Unlock achievements
+### Student Experience
+- 🎮 Interactive quiz interface with animations
+- 📊 Detailed results with performance analytics
+- 🏆 Achievement system with badges
+- 📝 Question review with explanations
+- 📧 Email results functionality
 
-- **Admin Interface**:
-  - Manage quizzes and questions
-  - View user statistics
-  - Configure system settings
+### Admin Features
+- 🔐 Secure authentication with role-based access
+- 📝 Full CRUD operations for quizzes/questions
+- 👥 User management system
+- 📈 Analytics dashboard with charts
+- ⚙️ System configuration settings
+- 📜 Audit logging system
 
-## Technologies Used
+## Technical Specifications
 
-- **Frontend**:
-  - ReactJS
-  - Tailwind CSS
-  - Lucide React
-  - TypeScript
-  - Vite
+### Frontend Stack
+- **Framework**: React 18 with TypeScript
+- **Routing**: React Router v6
+- **Styling**: Tailwind CSS + custom animations
+- **Icons**: Lucide React
+- **Charts**: Custom SVG-based components
+- **Build**: Vite 5
 
-- **Testing**:
-  - Jest
-  - React Testing Library
+### Backend Stack
+- **Server**: Express.js
+- **Database**: JSON (proof of concept, ready for Supabase integration)
+- **Authentication**: JWT-based
+- **PDF Generation**: jsPDF
 
-## Getting Started
+### Testing
+- **Unit Tests**: Vitest + React Testing Library
+- **E2E Tests**: Supertest
+- **Coverage**: Vitest coverage reports
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/quizzy.git
-   ```
+## Development Setup
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+### Prerequisites
+- Node.js 18+
+- npm 9+
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:3000`
-
-## Running Tests
-
-To run the unit tests:
+### Installation
 ```bash
-npm test
+git clone https://github.com/yourusername/quizzy.git
+cd quizzy
+npm install
 ```
 
-## Contributing
+### Running the Application
+```bash
+# Start both frontend and backend
+npm start
 
-Contributions are welcome! Please open an issue or submit a pull request.
+# Frontend only (development)
+npm run dev
+
+# Backend only (development)
+npm run server
+
+# Production build
+npm run build
+```
+
+### Testing
+```bash
+# Run unit tests
+npm test
+
+# Run tests with coverage
+npm run coverage
+```
+
+## Environment Variables
+Create a `.env` file in the root directory with:
+```
+VITE_API_BASE_URL=http://localhost:3001
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+## Project Structure
+```
+src/
+├── api/            # API service modules
+├── components/     # Reusable components
+├── data/           # Mock data and types
+├── pages/          # Page components
+│   ├── admin/      # Admin interface
+│   └── student/    # Student interface
+├── services/       # Business logic
+└── styles/         # Global styles
+```
+
+## Deployment
+The application can be deployed to:
+- Vercel
+- Netlify
+- Any Node.js hosting platform
 
 ## License
+MIT License - See LICENSE file for details
 
-This project is licensed under the MIT License.
+## Roadmap
+- [ ] Supabase integration
+- [ ] Real-time analytics
+- [ ] Mobile app version
+- [ ] Teacher

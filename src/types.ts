@@ -1,21 +1,12 @@
+export type QuestionType = 'multiple_choice' | 'true_false' | 'short_answer';
+
 export interface QuizQuestion {
-  id: number;
+  id: string;
+  type: QuestionType;
   question: string;
-  options: string[];
-  answer: string;
+  options?: string[]; // For multiple choice
+  correctAnswer?: string; // For short answer and true/false
+  answer?: boolean; // For true/false
   category?: string;
-  selectedAnswer?: string;
-}
-
-export interface Achievement {
-  id: number;
-  name: string;
-  description: string;
-  icon: 'trophy' | 'star';
-}
-
-export interface AdminStats {
-  totalQuizzes: number;
-  activeUsers: number;
-  averageScore: number;
+  difficulty?: 'easy' | 'medium' | 'hard';
 }

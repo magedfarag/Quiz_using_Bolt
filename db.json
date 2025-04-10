@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@quizzy.com",
+      "password": "$2a$10$EXAMPLEHASHEDPASSWORD",
+      "role": "Admin",
+      "isVerified": true,
+      "createdAt": "2023-01-01T00:00:00Z",
+      "permissions": {
+        "canEditQuestions": true,
+        "canManageUsers": true,
+        "canViewAnalytics": true,
+        "canModifySettings": true
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "question": "What is 2 + 2?",
+      "options": ["3", "4", "5"],
+      "answer": "4",
+      "category": "Math",
+      "difficulty": "easy",
+      "createdAt": "2023-01-01T00:00:00Z"
+    }
+  ],
+  "results": [],
+  "settings": {
+    "quizTimer": 30,
+    "maxQuestions": 10,
+    "passingScore": 70,
+    "requireEmailVerification": true
+  },
+  "logs": []
+}
